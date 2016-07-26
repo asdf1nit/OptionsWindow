@@ -1,0 +1,205 @@
+﻿<Window x:Name="Options_Window" x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OptionsWindow"
+        mc:Ignorable="d"
+        Width="{x:Static SystemParameters.PrimaryScreenWidth}"
+        Title="Options" Height="36" Topmost="True" BorderBrush="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}" Visibility="Visible" IsManipulationEnabled="True" Left="0" Top="0" ResizeMode="CanMinimize" AllowsTransparency="True" WindowStyle="None">
+    <Window.TaskbarItemInfo>
+        <TaskbarItemInfo/>
+    </Window.TaskbarItemInfo>
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
+    <Window.OpacityMask>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="White" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.OpacityMask>
+    <Window.Background>
+        <RadialGradientBrush>
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="White" Offset="1"/>
+        </RadialGradientBrush>
+    </Window.Background>
+    <Window.Foreground>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="White" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Foreground>
+    <Grid x:Name="grdMain" Margin="0,0,0,0" HorizontalAlignment="Left" Width="{x:Static SystemParameters.PrimaryScreenWidth}" Height="36" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FFA09999" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid Grid.Column="2" Margin="63,10,516,6">
+            <Button x:Name="btnOSK" Visibility="{Binding IsChecked, Converter={StaticResource MyConverter1}, ElementName=checkBox}" Content="Open OSK" HorizontalAlignment="Right" Foreground="White">
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+                <Button.OpacityMask>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.OpacityMask>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </Grid>
+        <Grid Grid.Column="2" Margin="151,10,402,6">
+            <Button x:Name="btnTaskMngr" Visibility="{Binding IsChecked, Converter={StaticResource MyConverter1}, ElementName=checkBox}" Content="Open Task Mgr" HorizontalAlignment="Left" Foreground="White">
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+                <Button.OpacityMask>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.OpacityMask>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </Grid>
+        <Grid Grid.Column="2" Margin="263,10,274,6">
+            <Button x:Name="btnRestart_" Visibility="{Binding IsChecked, Converter={StaticResource MyConverter1}, ElementName=checkBox}" Content="Restart Windows" Foreground="White">
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+                <Button.OpacityMask>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.OpacityMask>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </Grid>
+        <Grid Grid.Column="2" Margin="480,10,62,6">
+            <Button x:Name="btnExplorer" Visibility="{Binding IsChecked, Converter={StaticResource MyConverter1}, ElementName=checkBox}" Content="Explorer" HorizontalAlignment="Left" Foreground="White">
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+                <Button.OpacityMask>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.OpacityMask>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </Grid>
+        <Grid Grid.Column="2" Margin="387,10,153,6">
+            <Button x:Name="btnAppLoad" Content="Check-In" Visibility="{Binding IsChecked, Converter={StaticResource MyConverter1}, ElementName=checkBox}" HorizontalAlignment="Left" Foreground="White">
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+                <Button.OpacityMask>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.OpacityMask>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </Grid>
+        <Grid Margin="69,10,16,6">
+            <Button x:Name="btnPass" Visibility="Visible" Content="Unlock" HorizontalAlignment="Right" Foreground="White" IsEnabled="True">
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+                <Button.OpacityMask>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.OpacityMask>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </Grid>
+        <Button x:Name="btnExit" Content="Exit" Visibility="Hidden" Foreground="White" Grid.Column="3" HorizontalAlignment="Right" Width="61" Height="20" Margin="0,10,-102,6" >
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.OpacityMask>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Grid Margin="20,10,85,0">
+            <CheckBox x:Name="checkBox" Content="" HorizontalAlignment="Left" FontSize="20" IsChecked="{Binding Path=ShowButtons, RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Window}}" Visibility="Hidden">
+                <CheckBox.Effect>
+                    <DropShadowEffect/>
+                </CheckBox.Effect>
+            </CheckBox>
+
+        </Grid>
+        <Button x:Name="btnLock" Visibility="Visible" Content="Lock" HorizontalAlignment="Right" Foreground="White" IsEnabled="True" Margin="0,10,81,6" RenderTransformOrigin="-0.65,0.41">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.OpacityMask>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+    </Grid>
+</Window>
