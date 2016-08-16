@@ -7,9 +7,7 @@
         mc:Ignorable="d"
         Width="{x:Static SystemParameters.PrimaryScreenWidth}"
         Title="Options" Height="36" Topmost="True" BorderBrush="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}" Visibility="Visible" IsManipulationEnabled="True" Left="0" Top="0" ResizeMode="CanMinimize" AllowsTransparency="True" WindowStyle="None">
-    <Window.TaskbarItemInfo>
-        <TaskbarItemInfo/>
-    </Window.TaskbarItemInfo>
+    
     <Window.Effect>
         <DropShadowEffect/>
     </Window.Effect>
@@ -31,7 +29,7 @@
             <GradientStop Color="White" Offset="1"/>
         </LinearGradientBrush>
     </Window.Foreground>
-    <Grid x:Name="grdMain" Margin="0,0,0,0" HorizontalAlignment="Left" Width="{x:Static SystemParameters.PrimaryScreenWidth}" Height="36" VerticalAlignment="Top">
+    <Grid x:Name="grdMain" Margin="0,0,0,0" HorizontalAlignment="Left" Width="{x:Static SystemParameters.PrimaryScreenWidth}" Height="36" VerticalAlignment="Top" Focusable="True">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
@@ -44,7 +42,7 @@
                 <GradientStop Color="#FFA09999" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Grid Grid.Column="2" Margin="63,10,516,6">
+        <Grid Grid.Column="2" Margin="63,10,516,6" Focusable="True">
             <Button x:Name="btnOSK" Visibility="{Binding IsChecked, Converter={StaticResource MyConverter1}, ElementName=checkBox}" Content="Open OSK" HorizontalAlignment="Right" Foreground="White">
                 <Button.BorderBrush>
                     <ImageBrush/>

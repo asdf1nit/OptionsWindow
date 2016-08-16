@@ -102,9 +102,10 @@ Class MainWindow
         OnPropertyChanged1("ShowButtons")
     End Function
 
-    Private Sub btnPass_Copy_Click(sender As Object, e As RoutedEventArgs) Handles btnLock.Click
+    Private Sub btnLock_Click(sender As Object, e As RoutedEventArgs) Handles btnLock.Click
         showButtonsValue = False
         ShowButtons() = False
         OnPropertyChanged1("ShowButtons")
+
     End Sub
 End Class

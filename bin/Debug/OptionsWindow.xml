@@ -6,41 +6,6 @@ OptionsWindow
 </name>
 </assembly>
 <members>
-<member name="T:OptionsWindow.Window1">
-<summary>
-Window1
-</summary>
-</member>
-<member name="M:OptionsWindow.Window1.InitializeComponent">
-<summary>
-InitializeComponent
-</summary>
-</member>
-<member name="T:OptionsWindow.Application">
-<summary>
-Application
-</summary>
-</member>
-<member name="M:OptionsWindow.Application.InitializeComponent">
-<summary>
-InitializeComponent
-</summary>
-</member>
-<member name="M:OptionsWindow.Application.Main">
-<summary>
-Application Entry Point.
-</summary>
-</member>
-<member name="T:OptionsWindow.MainWindow">
-<summary>
-MainWindow
-</summary>
-</member>
-<member name="M:OptionsWindow.MainWindow.InitializeComponent">
-<summary>
-InitializeComponent
-</summary>
-</member>
 <member name="T:OptionsWindow.My.MyWpfExtension">
  <summary>
  Module used to define the properties that are available in the My Namespace for WPF
@@ -87,6 +52,41 @@ InitializeComponent
 <summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:OptionsWindow.Window1">
+<summary>
+Window1
+</summary>
+</member>
+<member name="M:OptionsWindow.Window1.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:OptionsWindow.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:OptionsWindow.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:OptionsWindow.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="T:OptionsWindow.MainWindow">
+<summary>
+MainWindow
+</summary>
+</member>
+<member name="M:OptionsWindow.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
 </summary>
 </member>
 </members>
